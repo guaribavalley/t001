@@ -1,0 +1,509 @@
+/* --------------------- RESET --------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {  display: block;}
+body {  line-height: 1;}
+ol,li{  list-style: none;}
+blockquote,q {  quotes: none;}
+blockquote:before,blockquote:after,q:before,q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ------------------------------------------------- */
+.clear {
+  clear: both;
+}
+/* ------------------------FOOTER------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -16em;
+  margin-left:0em;
+  /* the bottom margin is the negative value of the footer's height */
+
+}
+.footer,
+.push {
+  height: 16em;
+  /* .push must be the same height as .footer */
+}
+.push {
+  border: none;
+}
+.footer * {
+  float: left;
+}
+/* ------------------------------------------------- */
+#top{
+	border: dotted thin black;
+	background-color:#006600;
+	width: 100%;
+}
+div[itemprop='corporateVisualIdentity'] {
+  width: 17em;
+  height: 5em;
+  border: solid thin #CFFBFF;
+}
+div[itemprop='corporateVisualIdentity'] div[itemprop='logo'],
+div[itemprop='corporateVisualIdentity'] img[itemprop='primaryImageOfPage'] {
+  width: 5em;
+  height: 5em;
+  float: left;
+}
+div[itemprop='corporateVisualIdentity'] div.textIdentity {
+  width: 11em;
+}
+div[itemprop='corporateVisualIdentity'] div.textIdentity div {
+  /*.motto, .name, .description*/
+
+  white-space: nowrap;
+  margin-bottom: 0.1em;
+}
+/* ------------------------------------------------- */
+div[itemprop='contacts'] {
+  width: 17em;
+  height: 12.5em;
+  border: solid thin #CBFFFF;
+}
+div[itemprop='contacts'] span.cntask {
+  display: block;
+  margin-bottom: 0.3em;
+  height: 1.1em;
+}
+div[itemprop='contacts'] span.contactregionname {
+  display: block;
+  height: 1.1em;
+  margin-bottom: 0.3em;
+  margin-left: 0.5em;
+}
+div[itemprop='contacts'] ul li div[itemtype='http://schema.org/PostalAddress'] {
+  height: 1.1em;
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+}
+/* ------------------------------------------------- */
+div.scfg {
+  width: 5em;
+  height: 10em;
+  border: solid thin #CBDEFA;
+  text-align:center;
+}
+div.scfg .langSelector {
+  margin-bottom: 0.5em;
+}
+div.scfg ul li {
+  height: 1.1em;
+}
+div.scfg ul li div[itemtype='http://schema.org/Language'] div {
+  height: 1.1em;
+}
+.adm {
+  width: 4.5em;
+  height: 3em;
+  margin-bottom: 1em;
+}
+.msie .adm {
+  width: 7em;
+}
+.adm ul {
+  width: 100%;
+  height: 10em;
+}
+.adm ul li {
+  width: auto;
+  float: left;
+  clear: left;
+  overflow: hidden;
+}
+.adm ul li a {
+  height: 1.1em;
+}
+div[itemtype='http://schema.org/Language'] div {
+  height: 1.1em;
+}
+.languagecontainer, .admcontainer{
+	border: solid;
+	margin-top:0.5em;
+	padding:0.1em;
+}
+
+
+/* ------------------------------------------------- */
+.navList {
+  width: 12em;
+  height: 12em;
+  border: solid thin #CBDEFA;
+}
+.navList ul li {
+  width: 100%;
+  height: 1em;
+  margin-botton: 0.5em;
+}
+.navList ul li a {
+  height: 1em;
+  width: 100%;
+}
+nav[role='navigation'] {
+  width: 10em;
+  height: 10.5em;
+  border: solid thin #CBDEFA;
+}
+nav[role='navigation'] ul li {
+  width: 100%;
+  height: 1em;
+  margin-botton: 0.5em;
+}
+nav[role='navigation'] ul li a {
+  height: 1em;
+  width: 100%;
+}
+.horizontalmenu {
+  width: 12em;
+  height: 12em;
+  border: solid thin #CBDEFA;
+}
+.horizontalmenu ul li {
+  width: 100%;
+  height: 1em;
+  margin-botton: 0.5em;
+}
+.horizontalmenu ul li a {
+  height: 1em;
+  width: 100%;
+}
+/* ------------------------------------------------- */
+section[role='main'] h1 {
+  min-width: 17em;
+  width: auto !important;
+  width: 17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  height: 1.2em;
+}
+section[role='main'] h1 img {
+  vertical-align: middle;
+  display: inline;
+  width: 1em;
+  height: 1em;
+  float: left;
+  margin: 0.1em;
+  line-height: 3em;
+}
+section[role='main'] h1 div {
+  vertical-align: middle;
+  height: 1.1em;
+}
+section[role='main'] section h2 {
+  width: 17em;
+  text-align: left;
+  margin: 0.5em;
+  height: 1.1em;
+}
+section[role='main'] section ul li div {
+  overflow: hidden;
+  width: 17em;
+  padding: 0.5em;
+  border: solid thin blue;
+  margin-bottom: 1em;
+  margin-left: 0.1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+section[role='main'] section ul li div img {
+  width: 17em;
+  height: 16em;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  border-radius: 0.3em;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  float: left;
+}
+/* ------------------------------------------------- */
+.copyline {
+  float: left;
+  display: inline-block;
+  color: red;
+}
+.copyline div {
+  display: block;
+  float: left;
+  color: red;
+}
+.wrapper {
+	width: 17em;
+}
+/* ------------------------------------------------- */
+
+
+
+
+li.scfgcontainer {
+	margin-top:0.2em;
+	width:5em;	
+}
+li.scfgcontainer .scfg{	
+	width:5.20em;	
+}
+.contactscontainer{
+	width: 14em;		
+}	
+.adm ul{
+	overflow:hidden;
+	width:5.2em;
+	height:auto;
+}
+.adm ul li{
+	
+	border: solid;
+	margin-top:0.5em;
+	width:4.55em;
+	padding:0.1em;		
+	
+}
+	
+div.horizontalmenu {
+	border: solid green;
+	float:left;
+	size:0.5em;
+	margin:auto;
+	width:8.5em;
+	height:auto;
+	overflow:hidden;
+	text-align:center;
+	padding-left:-0.1em;
+}
+div.horizontalmenu ul li {
+	float:left;
+	width:7.5em;
+	border:solid;
+	margin:0.2em;
+	padding:0.1em;
+	text-align:center;
+}
+footer div.adm{
+	border: solid;
+	float:left;
+	margin-left:-5em;
+	margin-top:-16em;
+	height:7em;
+	width:5.15em;
+	padding:0.2em;
+}
+
+.socialicons{
+	margin-left:9em;
+}
+.socialicons ul li{
+	float: left;
+}
+.socialicons ul li{
+	float: none;
+}
+
+
+/*0em;*/
+@media screen and (min-width: 0em) {
+	body {
+		background-color: #A1BBCE;
+	}
+	
+	nav[role='navigation'] {
+		border: solid green;
+		float:left;
+		size:0.5em;
+		margin:auto;
+		width:10em;
+		height:auto;
+		overflow:hidden;
+		text-align:center;
+		margin-top:-16.2em;
+		margin-left:5.5em;				
+		padding-left:-0.1em;
+	}
+	nav[role='navigation'] ul li {
+		float:left;
+		width:7.5em;
+		border:solid;
+		margin:0.2em;
+		padding:0.1em;
+		text-align:center;
+	}
+	section[role='main'] section ul li {
+		width: 6.3em;
+		height:7em;
+		float:left;
+		margin-left: 0.2em;
+	}
+	section[role='main'] section ul li div {
+		width: 5.1em;
+		padding: 0.5em;
+		margin-bottom: 1em;
+		margin-left: 0.1em;
+		border: solid thin blue;
+	}
+	section[role='main'] section ul li div div{
+		width: 3em;
+		height:1em;
+		border: solid thin purple;
+	}	
+	section[role='main'] section ul li div img {
+		width: 5em;
+		height:5em;
+		border: solid thin green;
+	}
+	#top{
+		height:34em;
+	}	
+}
+/* ------------------------------------------------- */
+/*28.555em*/
+@media screen and (min-width: 28.555em) {
+	body {
+		background-color: #BA2BCD;
+	}
+	.wrapper {
+		width: 28.555em;
+	}  
+	.banner {
+		width: 28.555em;
+	}
+	.banner ul {
+		width: 28.555em;
+	}
+	#top{
+		overflow:hidden;
+		width: 30em;
+		height:28em;
+	}
+	.corporateVisualIdentitycontainer, .contactscontainer{
+		border:solid;
+		width: 15em;
+		float:left;
+	}
+	div[itemprop='corporateVisualIdentity'] ,div[itemprop='contacts']{
+	  width: 14.9em;
+	}
+	.banner ul li.contactscontainer, li.scfgcontainer {
+		float: left;    
+	}
+	li.scfgcontainer {
+		float: left;
+		margin-top:-18.4em;
+		margin-left:24.5em;
+	}  
+	nav[role='navigation']{
+		border: solid red;
+		float:left;
+		margin-left:15.5em;
+		margin-top:-28em;
+		width:8.5em;
+	}
+}
+/* ------------------------------------------------- */
+/*36.15em*/
+@media screen and (min-width: 36.16em) {
+	body {
+		background-color: #CAB3CC;
+	}
+	.wrapper {
+		width: 37.5em;
+	}
+	#top{
+		overflow:hidden;
+		width: 38em;
+		height:37em;
+	}	
+	nav[role='navigation'] {	
+		width:17em;
+		margin-left:0em;
+		margin-top:-31.5em;
+	}
+	div[itemprop='corporateVisualIdentity'], .corporateVisualIdentitycontainer{
+		width: 17em;
+	}		
+	li.scfgcontainer {
+		margin-top:-12.8em;
+		margin-left:31.8em; /* <--- */
+	}	
+	div[itemprop='contacts'] {
+	  width: 14em;
+	}
+	.contactscontainer{
+		width: 14em;
+	}
+/*--------------------------*//*+++++++++++++++++++++++++++++++++++++++++*/
+}
+/* ------------------------------------------------- */
+/*48.55em*/
+@media screen and (min-width: 48.55em) {
+	body {
+		background-color: #DABB4B;
+	}
+	.wrapper {
+		width: 70em;
+	}
+	li.scfgcontainer {
+		width:5em;
+		margin-left:17.5em;
+		margin-top:0em;   /* <<<=== */		
+	}
+	#top{
+		width: 100%;
+	}  
+	.contactscontainer{
+		clear:none;
+		float:left;
+	}
+	nav[role='navigation'] {	
+		margin-left:30em;
+		margin-top:-37em;
+	}
+	div[itemprop='corporateVisualIdentity'], .corporateVisualIdentitycontainer{
+		width: 15em;
+	}	
+	.contactscontainer{
+		width: 14.1em;
+	}
+	li.scfgcontainer {
+		
+	}		
+}
+/* ------------------------------------------------- */
+/*62.55em*/
+@media screen and (min-width: 62.55em) {
+	body {
+		background-color: #EAB5CA;
+	}  
+}
+/* ------------------------------------------------- */
